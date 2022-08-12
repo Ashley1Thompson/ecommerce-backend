@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+// through table to connect many to many: products <=> tags
 ProductTag.init(
   {
     id: {
